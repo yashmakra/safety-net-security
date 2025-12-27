@@ -2,7 +2,22 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Optional: custom global styles */
-body {
-  margin: 0;
+:root {
+  --bg-main: #0b1220;     /* page background */
+  --bg-card: #111827;    /* cards */
+  --text-main: #e5e7eb;  /* main text */
+  --text-muted: #9ca3af; /* secondary text */
+  --border: #1f2937;
+  --accent: #3b82f6;
 }
+
+/* Optional: smoother look */
+* {
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+body {
+  background-color: var(--bg-main);
+  color: var(--text-main);
+}
+
+
